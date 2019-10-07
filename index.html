@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SVG-encoder</title>
+	<style>
+		.wrap{
+			width: 800px;
+			margin: 30px auto;
+			border: 1px solid #e0e0e0;
+		}
+		.input{
+			border-bottom: 1px solid #e0e0e0;
+			padding: 30px;
+		}
+		.output{
+			padding: 30px;
+		}
+		#svg-gen{
+			padding: 0 20px;
+			display: inline-block;
+			cursor: pointer;
+			margin-top: 20px;
+			height: 42px;
+			line-height: 42px;
+		}
+		textarea{
+			width: 100%;
+		}
+		h3{
+			margin-top: 30px;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="input">
+			<h3>Введите код svg</h3>
+			<div class="area-box">
+				<textarea id="input-svg" cols="100" rows="10"></textarea>
+			</div>
+			<div class="btn">
+				<button id="svg-gen">Обработать</button>
+			</div>
+		</div>
+
+		<div class="output">
+			<h3>Результат</h3>
+			<div class="area-box">
+				<textarea id="output-svg" cols="100" rows="10"></textarea>
+			</div>
+		</div>
+
+	</div>
+
+<script src="bundle.js"></script>
+</body>
+</html>
